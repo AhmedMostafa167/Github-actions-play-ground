@@ -1,0 +1,16 @@
+name: My First Workflow
+
+on: push                    # the doorbell: run on every push
+
+jobs:
+  hello:                    # you choose this name
+    runs-on: ubuntu-latest  # ask GitHub for a free Linux machine
+    steps:
+      - name: Say hello
+        run: echo "Hello, GitHub Actions!"
+
+      - name: Show run info
+        run: |
+          echo "Operating system : ${{ runner.os }}"
+          echo "Repository       : ${{ github.repository }}"
+          echo "Triggered by     : ${{ github.actor }}"
