@@ -14,3 +14,6 @@ jobs:
           echo "Operating system : ${{ runner.os }}"
           echo "Repository       : ${{ github.repository }}"
           echo "Triggered by     : ${{ github.actor }}"
+          
+      - name: show date
+        run: date
