@@ -1,6 +1,6 @@
 name: My First Workflow
 
-on: push                    # the doorbell: run on every push
+on: workflow_dispatch                     # the doorbell: run on every push
 
 jobs:
   hello:                    # you choose this name
