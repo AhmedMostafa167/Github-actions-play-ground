@@ -17,3 +17,4 @@ jobs:
           
       - name: show date
         run: date
+      - run: exit 1
